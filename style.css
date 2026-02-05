@@ -31,6 +31,7 @@ h1 {
 .buttons {
   position: relative;
   height: 80px;
+  overflow: visible;
 }
 
 button {
