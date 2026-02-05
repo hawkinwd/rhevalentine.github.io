@@ -1,11 +1,11 @@
 const noBtn = document.getElementById("noBtn");
+const buttonArea = document.querySelector(".buttons");
 
-noBtn.addEventListener("mouseover", () => {
-  const container = document.querySelector(".container");
-  const containerRect = container.getBoundingClientRect();
+noBtn.addEventListener("mouseenter", () => {
+  const areaRect = buttonArea.getBoundingClientRect();
 
-  const maxX = containerRect.width - noBtn.offsetWidth;
-  const maxY = containerRect.height - noBtn.offsetHeight;
+  const maxX = areaRect.width - noBtn.offsetWidth;
+  const maxY = areaRect.height - noBtn.offsetHeight;
 
   const randomX = Math.random() * maxX;
   const randomY = Math.random() * maxY;
@@ -13,7 +13,3 @@ noBtn.addEventListener("mouseover", () => {
   noBtn.style.left = `${randomX}px`;
   noBtn.style.top = `${randomY}px`;
 });
-
-function goYes() {
-  window.location.href = "yes.html";
-}
