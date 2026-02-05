@@ -7,3 +7,7 @@ noBtn.addEventListener("mouseenter", () => {
   noBtn.style.left = `${randomLeft}px`;
   noBtn.style.top = `${randomTop}px`;
 });
+
+function goYes() {
+  window.location.href = "yes.html";
+}
